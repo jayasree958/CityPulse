@@ -10,7 +10,7 @@ st.set_page_config(page_title="CityPulse", page_icon="🏙️", layout="wide")
 
 # Configuration
 GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY")
-GEMINI_MODEL = "gemini-1.5-flash"
+GEMINI_MODEL = "gemini-flash-latest"
 
 @st.cache_data(ttl=3600)
 def load_311_data():
